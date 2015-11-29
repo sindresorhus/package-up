@@ -25,9 +25,9 @@ $ npm install --save pkg-up
 
 ```js
 // example.js
-var pkgUp = require('pkg-up');
+const pkgUp = require('pkg-up');
 
-pkgUp().then(function (filepath) {
+pkgUp().then(filepath => {
 	console.log(filepath);
 	//=> '/Users/sindresorhus/foo/package.json'
 });
@@ -38,7 +38,7 @@ pkgUp().then(function (filepath) {
 
 ### pkgUp([cwd])
 
-Returns a promise that resolves to a filepath or `null`.
+Returns a promise for the filepath or `null`.
 
 ### pkgUp.sync([cwd])
 

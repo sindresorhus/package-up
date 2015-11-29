@@ -5,8 +5,8 @@ import fn from './';
 const cwd = path.join(__dirname, 'fixture');
 const pkgPath = path.join(__dirname, 'package.json');
 
-test('async', t => {
-	return fn(cwd).then(x => t.is(x, pkgPath));
+test('async', async t => {
+	t.is(await fn(cwd), pkgPath);
 });
 
 test('sync', t => {
