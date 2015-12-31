@@ -11,5 +11,4 @@ test('async', async t => {
 
 test('sync', t => {
 	t.is(fn.sync(cwd), pkgPath);
-	t.end();
 });
