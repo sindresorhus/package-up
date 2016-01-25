@@ -55,7 +55,7 @@ Directory to start from.
 ## Related
 
 - [read-pkg-up](https://github.com/sindresorhus/read-pkg-up) - Read the closest package.json file
-- [pkg-dir](https://github.com/sindresorhus/pkg-dir) - Find the root directory of a npm package
+- [pkg-dir](https://github.com/sindresorhus/pkg-dir) - Find the root directory of an npm package
 - [find-up](https://github.com/sindresorhus/find-up) - Find a file by walking up parent directories
 
 
