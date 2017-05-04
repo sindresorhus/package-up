@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -28,10 +28,8 @@
     "findup",
     "look-up",
     "look",
-    "file",
     "search",
     "match",
-    "package",
     "resolve",
     "parent",
     "parents",
@@ -43,7 +41,7 @@
     "path"
   ],
   "dependencies": {
-    "find-up": "^1.0.0"
+    "find-up": "^2.1.0"
   },
   "devDependencies": {
     "ava": "*",

@@ -38,16 +38,16 @@ pkgUp().then(filepath => {
 
 ### pkgUp([cwd])
 
-Returns a promise for the filepath or `null`.
+Returns a `Promise` for either the filepath or `null` if it could be found.
 
 ### pkgUp.sync([cwd])
 
-Returns a filepath or `null`.
+Returns the filepath or `null`.
 
 #### cwd
 
-Type: `string`  
-Default: `'.'`
+Type: `string`
+Default: `process.cwd()`
 
 Directory to start from.
 
@@ -61,4 +61,4 @@ Directory to start from.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
