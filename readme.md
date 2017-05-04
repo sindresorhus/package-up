@@ -38,7 +38,7 @@ pkgUp().then(filepath => {
 
 ### pkgUp([cwd])
 
-Returns a `Promise` for either the filepath or `null` if it could be found.
+Returns a `Promise` for either the filepath or `null` if it couldn't be found.
 
 ### pkgUp.sync([cwd])
 
@@ -46,7 +46,7 @@ Returns the filepath or `null`.
 
 #### cwd
 
-Type: `string`
+Type: `string`<br>
 Default: `process.cwd()`
 
 Directory to start from.
