@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save pkg-up
+$ npm install pkg-up
 ```
 
 
@@ -27,22 +27,26 @@ $ npm install --save pkg-up
 // example.js
 const pkgUp = require('pkg-up');
 
-pkgUp().then(filepath => {
-	console.log(filepath);
+(async () => {
+	console.log(await pkgUp());
 	//=> '/Users/sindresorhus/foo/package.json'
-});
+})();
 ```
 
 
 ## API
 
-### pkgUp([cwd])
+### pkgUp([options])
 
-Returns a `Promise` for either the filepath or `null` if it couldn't be found.
+Returns a `Promise<string>` for the filepath, or `Promise<null>` if it couldn't be found.
 
-### pkgUp.sync([cwd])
+### pkgUp.sync([options])
 
-Returns the filepath or `null`.
+Returns the filepath, or `null` if it couldn't be found.
+
+#### options
+
+Type: `Object`
 
 #### cwd
 
