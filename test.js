@@ -7,8 +7,10 @@ const pkgPath = path.join(__dirname, 'package.json');
 
 test('async', async t => {
 	t.is(await pkgUp({cwd}), pkgPath);
+	t.is(path.dirname(await pkgUp()), __dirname);
 });
 
 test('sync', t => {
 	t.is(pkgUp.sync({cwd}), pkgPath);
+	t.is(path.dirname(pkgUp.sync()), __dirname);
 });
