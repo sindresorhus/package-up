@@ -1,4 +1,4 @@
-# pkg-up [![Build Status](https://travis-ci.org/sindresorhus/pkg-up.svg?branch=master)](https://travis-ci.org/sindresorhus/pkg-up)
+# pkg-up
 
 > Find the closest package.json file
 
