@@ -1,6 +1,6 @@
 import path from 'node:path';
-import test from 'ava';
 import {fileURLToPath} from 'node:url';
+import test from 'ava';
 import {pkgUp, pkgUpSync} from './index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

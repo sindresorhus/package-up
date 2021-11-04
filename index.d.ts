@@ -1,11 +1,11 @@
-export interface Options {
+export type Options = {
 	/**
 	The directory to start from.
 
 	@default process.cwd()
 	*/
 	readonly cwd?: string;
-}
+};
 
 /**
 Find the closest `package.json` file.
