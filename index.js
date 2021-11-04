@@ -1,5 +1,9 @@
-'use strict';
-const findUp = require('find-up');
+import {findUp, findUpSync} from 'find-up';
 
-module.exports = async ({cwd} = {}) => findUp('package.json', {cwd});
-module.exports.sync = ({cwd} = {}) => findUp.sync('package.json', {cwd});
+export async function pkgUp({cwd} = {}) {
+	return findUp('package.json', {cwd});
+}
+
+export function pkgUpSync({cwd} = {}) {
+	return findUpSync('package.json', {cwd});
+}

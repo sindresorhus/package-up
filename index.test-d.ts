@@ -1,7 +1,7 @@
 import {expectType} from 'tsd';
-import pkgUp = require('.');
+import {pkgUp, pkgUpSync} from './index.js';
 
-expectType<Promise<string | null>>(pkgUp());
-expectType<Promise<string | null>>(pkgUp({cwd: '.'}));
-expectType<string | null>(pkgUp.sync());
-expectType<string | null>(pkgUp.sync({cwd: '.'}));
+expectType<Promise<string | undefined>>(pkgUp());
+expectType<Promise<string | undefined>>(pkgUp({cwd: '.'}));
+expectType<string | undefined>(pkgUpSync());
+expectType<string | undefined>(pkgUpSync({cwd: '.'}));
