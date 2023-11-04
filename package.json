@@ -1,6 +1,6 @@
 {
 	"name": "package-up",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"description": "Find the closest package.json file",
 	"license": "MIT",
 	"repository": "sindresorhus/package-up",
