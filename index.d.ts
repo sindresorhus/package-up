@@ -24,13 +24,13 @@ Find the closest `package.json` file.
 //                 └── example.js
 
 // example.js
-import {pkgUp} from 'pkg-up';
+import {packageUp} from 'package-up';
 
-console.log(await pkgUp());
+console.log(await packageUp());
 //=> '/Users/sindresorhus/foo/package.json'
 ```
 */
-export function pkgUp(options?: Options): Promise<string | undefined>;
+export function packageUp(options?: Options): Promise<string | undefined>;
 
 /**
 Synchronously find the closest `package.json` file.
@@ -49,11 +49,11 @@ Synchronously find the closest `package.json` file.
 //                 └── example.js
 
 // example.js
-import {pkgUpSync} from 'pkg-up';
+import {packageUpSync} from 'package-up';
 
-console.log(pkgUpSync());
+console.log(packageUpSync());
 //=> '/Users/sindresorhus/foo/package.json'
 ```
 */
-export function pkgUpSync(options?: Options): string | undefined;
+export function packageUpSync(options?: Options): string | undefined;
 

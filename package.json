@@ -1,9 +1,9 @@
 {
-	"name": "pkg-up",
+	"name": "package-up",
 	"version": "4.0.0",
 	"description": "Find the closest package.json file",
 	"license": "MIT",
-	"repository": "sindresorhus/pkg-up",
+	"repository": "sindresorhus/package-up",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",

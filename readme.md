@@ -1,11 +1,11 @@
-# pkg-up
+# package-up
 
 > Find the closest package.json file
 
 ## Install
 
 ```sh
-npm install pkg-up
+npm install package-up
 ```
 
 ## Usage
@@ -23,19 +23,19 @@ npm install pkg-up
 
 ```js
 // example.js
-import {pkgUp} from 'pkg-up';
+import {packageUp} from 'package-up';
 
-console.log(await pkgUp());
+console.log(await packageUp());
 //=> '/Users/sindresorhus/foo/package.json'
 ```
 
 ## API
 
-### pkgUp(options?)
+### packageUp(options?)
 
 Returns a `Promise<string>` for the file path, or `Promise<undefined>` if it could not be found.
 
-### pkgUpSync(options?)
+### packageUpSync(options?)
 
 Returns the file path, or `undefined` if it could not be found.
 

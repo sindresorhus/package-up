@@ -1,19 +1,19 @@
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import test from 'ava';
-import {pkgUp, pkgUpSync} from './index.js';
+import {packageUp, packageUpSync} from './index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const cwd = path.join(__dirname, 'fixture');
-const pkgPath = path.join(__dirname, 'package.json');
+const packagePath = path.join(__dirname, 'package.json');
 
 test('async', async t => {
-	t.is(await pkgUp({cwd}), pkgPath);
-	t.is(path.dirname(await pkgUp()), __dirname);
+	t.is(await packageUp({cwd}), packagePath);
+	t.is(path.dirname(await packageUp()), __dirname);
 });
 
 test('sync', t => {
-	t.is(pkgUpSync({cwd}), pkgPath);
-	t.is(path.dirname(pkgUpSync()), __dirname);
+	t.is(packageUpSync({cwd}), packagePath);
+	t.is(path.dirname(packageUpSync()), __dirname);
 });
